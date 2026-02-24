@@ -1,2 +1,2 @@
 # Your Redis continuity tester job
-*/10 * * * * export KUBECONFIG=/home/coder/.kube/config && export PATH=$PATH:/usr/local/bin && cd /home/coder/lacestream/redis-canray-test && /home/coder/lacestream/pipectl/venv/bin/python continuity.py >> /tmp/cron_output.txt 2>&1
+*/5 * * * * export KUBECONFIG=/home/coder/.kube/config && export PATH=$PATH:/usr/local/bin && cd /home/coder/lacestream/redis-canray-test && /home/coder/lacestream/pipectl/venv/bin/python continuity.py >> /tmp/cron_output.txt 2>&1
